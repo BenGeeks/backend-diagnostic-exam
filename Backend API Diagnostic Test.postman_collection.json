@@ -24,7 +24,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\": \"groot1\",\n    \"emailAddress\": \"iamgroot2@groot.com\",\n    \"password\": \"iamgroot!\",\n    \"access\": \"admin\",\n    \"firstName\": \"I am\",\n    \"lastName\": \"Groot\",\n    \"phoneNumber\": \"+63 999 995 7176\",\n    \"address\": {\n        \"address1\": \"B19 L23 Sta. Rosa Hills\",\n        \"address2\": \"Puting Kahoy\",\n        \"city\": \"Silang\",\n        \"province\": \"Cavite\",\n        \"postCode\": \"4118\"\n\n    }\n}"
+					"raw": "{\n    \"username\": \"iamgroot\",\n    \"emailAddress\": \"iamgroot@guardiansofthegalaxy.com\",\n    \"password\": \"iamgroot!\",\n    \"access\": \"admin\",\n    \"firstName\": \"Groot\",\n    \"lastName\": \"I am\",\n    \"phoneNumber\": \"+63 999 995 7176\",\n    \"address\": {\n        \"address1\": \"B19 L23 Sta. Rosa Hills\",\n        \"address2\": \"Puting Kahoy\",\n        \"city\": \"Silang\",\n        \"province\": \"Cavite\",\n        \"postCode\": \"4118\"\n\n    }\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/user/create",
@@ -59,10 +59,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\": \"groot1\",\n    \"emailAddress\": \"iamgroot2@groot.com\",\n    \"password\": \"iamgroot!\",\n    \"access\": \"admin\",\n    \"firstName\": \"I am\",\n    \"lastName\": \"Groot\",\n    \"phoneNumber\": \"+63 999 995 7176\",\n    \"address\": {\n        \"address1\": \"B19 L23 Sta. Rosa Hills\",\n        \"address2\": \"Puting Kahoy\",\n        \"city\": \"Silang\",\n        \"province\": \"Cavite\",\n        \"postCode\": \"4118\"\n\n    }\n}"
+					"raw": "{\n    \"password\": \"iamgroot!\",\n    \"access\": \"admin\",\n    \"firstName\": \"I am\",\n    \"lastName\": \"Groot\",\n    \"phoneNumber\": \"+63 999 995 7176\",\n    \"address\": {\n        \"address1\": \"B19 L23 Sta. Rosa Hills\",\n        \"address2\": \"Puting Kahoy\",\n        \"city\": \"Silang\",\n        \"province\": \"Cavite\",\n        \"postCode\": \"4118\"\n\n    }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/user/create",
+					"raw": "http://localhost:8080/user/update/63b7180ec03da6f782bea74c",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -70,7 +70,8 @@
 					"port": "8080",
 					"path": [
 						"user",
-						"create"
+						"update",
+						"63b7180ec03da6f782bea74c"
 					]
 				}
 			},
@@ -79,7 +80,7 @@
 		{
 			"name": "Delete a user",
 			"request": {
-				"method": "POST",
+				"method": "DELETE",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -97,7 +98,7 @@
 					"raw": "{\n    \"username\": \"groot1\",\n    \"emailAddress\": \"iamgroot2@groot.com\",\n    \"password\": \"iamgroot!\",\n    \"access\": \"admin\",\n    \"firstName\": \"I am\",\n    \"lastName\": \"Groot\",\n    \"phoneNumber\": \"+63 999 995 7176\",\n    \"address\": {\n        \"address1\": \"B19 L23 Sta. Rosa Hills\",\n        \"address2\": \"Puting Kahoy\",\n        \"city\": \"Silang\",\n        \"province\": \"Cavite\",\n        \"postCode\": \"4118\"\n\n    }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/user/create",
+					"raw": "http://localhost:8080/user/63b71e69dfa9db5e1d51afba",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -105,7 +106,7 @@
 					"port": "8080",
 					"path": [
 						"user",
-						"create"
+						"63b71e69dfa9db5e1d51afba"
 					]
 				}
 			},
@@ -142,7 +143,7 @@
 			"response": []
 		},
 		{
-			"name": "Get All User",
+			"name": "Get All Users",
 			"request": {
 				"method": "GET",
 				"header": [
