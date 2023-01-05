@@ -1,10 +1,6 @@
 1. run npm install
 
-2. create .env and paste the file below
-
-ACCESS_TOKEN_SECRET=89c226cf5ee75190f51fce62dd1cf13103a620ff8e9ec5ad9a53bab4be9997fe0866001e33c73bdb3fd4f562b90e2e741b19c65a94ad45288f95e0b50a614b5f
-ATLAS_URI=mongodb+srv://m001-student:PPfofIJM2Tib5Yp5@sandbox.javja.mongodb.net/backend?retryWrites=true&w=majority
-JWT_KEY= 7916ec50441929454826426cf22f26ee157dcaed3cbd1aa3a6c20328413b5f5d
+2. create .env and paste .env file data on the email
 
 3. nodemon server
 
