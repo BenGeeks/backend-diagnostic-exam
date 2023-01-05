@@ -17,7 +17,9 @@ JWT_KEY= 7916ec50441929454826426cf22f26ee157dcaed3cbd1aa3a6c20328413b5f5d
     "password": "iamgroot!"
 }
 
-6. Create an account using the payload sample below
+It is important to login first because a token will be provided on login
+
+6. Create an account using the payload sample below. Please make sure to update the header with the login token
 
 {
     "username": "iamgroot",
@@ -39,15 +41,15 @@ JWT_KEY= 7916ec50441929454826426cf22f26ee157dcaed3cbd1aa3a6c20328413b5f5d
 
 NOTE: username and emailaddress needs to be unique
 
-7. Get the list of users using the Get All Users in Postman
+7. Get the list of users using the Get All Users in Postman. Please make sure to update the header with the login token
 
-8. Delete a user
+8. Delete a user. Please make sure to update the header with the login token
 
 when deleting a user, please make sure to put the user id in the request url
 http://localhost:8080/user/63b71e69dfa9db5e1d51afba
 sample is shown in Postman
 
-9. Update a User
+9. Update a User. Please make sure to update the header with the login token
 
 Only owners of the account can update their account
 username and email cannot be updated
