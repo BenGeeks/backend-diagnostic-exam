@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "6b6516aa-e66c-402c-b245-199ac3c01fb0",
+		"name": "Backend API Diagnostic Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14074165"
+	},
+	"item": [
+		{
+			"name": "Create New User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I3MTgwZWMwM2RhNmY3ODJiZWE3NGMiLCJhY2Nlc3MiOiJhZG1pbiIsImlhdCI6MTY3Mjk0NDIyMiwiZXhwIjoxNjcyOTczMDIyfQ.MN5jjbmABjdA4RoHUhelxOYBQtnd2Wy_2sZ_gHxBcuI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"groot1\",\n    \"emailAddress\": \"iamgroot2@groot.com\",\n    \"password\": \"iamgroot!\",\n    \"access\": \"admin\",\n    \"firstName\": \"I am\",\n    \"lastName\": \"Groot\",\n    \"phoneNumber\": \"+63 999 995 7176\",\n    \"address\": {\n        \"address1\": \"B19 L23 Sta. Rosa Hills\",\n        \"address2\": \"Puting Kahoy\",\n        \"city\": \"Silang\",\n        \"province\": \"Cavite\",\n        \"postCode\": \"4118\"\n\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I3MTgwZWMwM2RhNmY3ODJiZWE3NGMiLCJhY2Nlc3MiOiJhZG1pbiIsImlhdCI6MTY3Mjk0NDIyMiwiZXhwIjoxNjcyOTczMDIyfQ.MN5jjbmABjdA4RoHUhelxOYBQtnd2Wy_2sZ_gHxBcuI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"groot1\",\n    \"emailAddress\": \"iamgroot2@groot.com\",\n    \"password\": \"iamgroot!\",\n    \"access\": \"admin\",\n    \"firstName\": \"I am\",\n    \"lastName\": \"Groot\",\n    \"phoneNumber\": \"+63 999 995 7176\",\n    \"address\": {\n        \"address1\": \"B19 L23 Sta. Rosa Hills\",\n        \"address2\": \"Puting Kahoy\",\n        \"city\": \"Silang\",\n        \"province\": \"Cavite\",\n        \"postCode\": \"4118\"\n\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I3MTgwZWMwM2RhNmY3ODJiZWE3NGMiLCJhY2Nlc3MiOiJhZG1pbiIsImlhdCI6MTY3Mjk0NDIyMiwiZXhwIjoxNjcyOTczMDIyfQ.MN5jjbmABjdA4RoHUhelxOYBQtnd2Wy_2sZ_gHxBcuI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"groot1\",\n    \"emailAddress\": \"iamgroot2@groot.com\",\n    \"password\": \"iamgroot!\",\n    \"access\": \"admin\",\n    \"firstName\": \"I am\",\n    \"lastName\": \"Groot\",\n    \"phoneNumber\": \"+63 999 995 7176\",\n    \"address\": {\n        \"address1\": \"B19 L23 Sta. Rosa Hills\",\n        \"address2\": \"Puting Kahoy\",\n        \"city\": \"Silang\",\n        \"province\": \"Cavite\",\n        \"postCode\": \"4118\"\n\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"emailAddress\": \"iamgroot@groot.com\",\n    \"password\": \"iamgroot!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Header eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2I3MTgwZWMwM2RhNmY3ODJiZWE3NGMiLCJhY2Nlc3MiOiJhZG1pbiIsImlhdCI6MTY3Mjk0NDIyMiwiZXhwIjoxNjcyOTczMDIyfQ.MN5jjbmABjdA4RoHUhelxOYBQtnd2Wy_2sZ_gHxBcuI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
